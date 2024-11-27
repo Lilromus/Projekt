@@ -93,6 +93,9 @@ app.delete('/delete/:filename', (req, res) => {
     }
 });
 
+app.get('/', (req, res) => {
+    res.send('Witaj w backendzie!');
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
